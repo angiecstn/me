@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'VT323', monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+.navbar{
+	display: flex;
+	height: 50px;
+	width: 100%; 
+	text-transform: uppercase; 
+	font-size: 14px;
+	box-shadow: 0px 1px 5px #888888;
+    top:0;
+    position: sticky;
+    background-color: white;
+}
+
+
+.topimg{
+	background: url("./images/code_bg.jpg");
+	height: 500px;
+}
+
+.pandaimg {
+    margin-top: -150px;
+}
+
+.imgtitle{
+	position: absolute;
+    color: white;
+    padding: 20px;
+    right: 0px;
+    top: 450px;
+    font-size: 32px;
+    text-transform: uppercase; 
+}
+
+.navbutton {
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 16px; 
+    font-family: 'VT323', monospace;
+
+ }
+
+ .navbutton:hover {
+ 	 background-color: #A9A9A9; 
+    color: black;
+     -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    cursor: pointer;
+ }
+
+ .contact {
+    margin-top: 32px;
+ }
+
+ .contact > a {
+    color: black;
+ }
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.gamebox {
+    margin: auto;
+    width: fit-content;
+}
+
+.row {
+    display: flex;
+}
+
+.box{
+    background-color: black;
+    color:white;
+    margin: 2px;
+    width: 50px;
+    line-height:44px;
+    height: 50px;
+    font-size: 32px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.box:hover {
+    background-color: grey;
+}
+
+.resetbutton {
+    width: 100px;
+    height: 33px;
+    text-transform: uppercase;
+    color: white;
+    background: black;
+    border-radius: 2px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.resetbutton:hover {
+    background-color: grey;
+}
+
+.blinking {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+/* IPHONE 6,7,8 CSS BELOW */
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) {
+    
+    .navbar {
+        height: 64px;
+    }
+    
+    .pandaimg {
+        margin-top: -40px;
+        width: 50%;
+    }
+
+    .topimg {
+        height: 250px;
+    }
+
+    .imgtitle {
+        position: absolute;
+        color: white;
+        right: 40px;
+        top: 150px;
+        font-size: 32px;
+        text-transform: uppercase; 
+    }
+
+    .about > p {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
